@@ -8,6 +8,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
 });
 
+
 function Sacar(results) {
   var cont = 0;
 
@@ -18,31 +19,37 @@ function Sacar(results) {
 
 
   while (cont < results) { //se for menor continue
-    if (results == 1) {
+    if (results >= 1 && results < 6) {
       /*retona do nota 1*/
 
       totalUm += 1;
       cont += 1;
-      showScreenResults(totalUm)
+ 
     }
-    if (results == 5) {
+    if (results >= 5 && results < 10) {
       /*retona do nota 5*/
       totalCinco += 1;
       cont += 5;
-      showScreenResults(0, totalCinco)
+      
     }
-    if (results >= 10) {
+    if (results >= 10 && results < 50) {
       /* retona do nota 10 */
-      totalDez += 10
+      totalDez += 1;
       cont += 10;
+      
+
     }
     if (results >= 50) {
       /*retona do nota 100*/
       totalCinquenta += 1;
       cont += 50;
+      
+
     }
 
   }
+  showScreenResults(totalUm, totalCinco, totalDez,totalCinquenta)
+
 }
 
 
