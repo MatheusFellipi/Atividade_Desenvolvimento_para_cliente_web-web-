@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styled.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form id='forms'>
+
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name">
+    <label for="nota">Nota</label>
+    <input type="number" name="nota" id="nota">
+
+    <button type="submit" class="btn btn-secondary">Criar aluno</button>
+
+  </form>
+  <div class="contentAluno">
+    <div class="header_List">
+      <h3>Lista de alunos</h3>
+      <span>
+        <button type="button" class="ordernaNotas btn btn-secondary">Orderna notas</button>
+        <button type="button" class="ordernaNomes btn btn-secondary">Orderna nome</button>
+      </span>
+
+    </div>
+    <div class="contentListAluno">
+      <div class="listaDeAlunoNotas">
+        <h5 class="porNota"></h5>
+      </div>
+      <div class="listaDeAlunoNomes">
+        <h5 class="porNome"> </h5>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="contentMaiorNota">
+    <div class="header_List">
+      <h3>Melhores nota dos alunos</h3>
+      <span>
+        <button type="button" class="melhorNotas btn btn-secondary">Mostrar nota</button>
+
+      </span>
+    </div>
+    
+    <div class="maiorNota"></div>
+  </div>
+
+
+  <div class="contentAlunosAprovados">
+    <div class="header_List">
+      <h3>Alunos aprovados</h3>
+      <span>
+        <button type="button" class="mostraAlunos btn btn-secondary ">mostra Alunos</button>
+
+      </span>
+    </div>
+
+    <div class="alunosAprovados"></div>
+  </div>
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
